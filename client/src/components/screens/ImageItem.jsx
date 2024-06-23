@@ -8,8 +8,6 @@ export default function ImageItem({format, collumn, url, descript, title}){
      
     const { defaultProject}= useScreenContext()
 
-    console.log(url)
-
 
     return(
 

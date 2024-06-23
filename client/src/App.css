@@ -1,1 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/background-1939128_1920.jpg');
+
+}
+
+body::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+
+}

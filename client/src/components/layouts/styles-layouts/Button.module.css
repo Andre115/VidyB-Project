@@ -14,13 +14,13 @@
 
 
 .container_button a, .container_button input{
+    flex: flex;
     font-size: 1rem;
-    padding: .5rem 1rem;
     display: block;
     text-decoration: none;
-    color: #fff;
-    height: 100%;
-    width: 100%;
+    color: #ffffff;
+    padding: .5rem;
+
 }
 
 .container_button input{

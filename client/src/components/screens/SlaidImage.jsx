@@ -13,19 +13,32 @@ export default function SlaidImage({}){
     const { project, defaultProject}= useScreenContext()
     const [data, setData]= useState(project || [])
 
+    //console.log(defaultProject.size_slaid)
+
     
     useEffect(()=>{
 
         setData({...project, defaultProject})
         const intems= document.querySelectorAll('#intems')
         let valor= 0
-        loadShow(intems, valor, 2 ) 
-
+        const tam= parseInt(defaultProject.size_slaid);
+        loadShow(intems, valor, 2 );
+        
         const id= setInterval(() => {
             loadShow(intems, valor, 2 ) 
-            valor= valor + 1
 
-           return ()=> clearTimeout(id);
+            if(parseInt(valor) < parseInt(defaultProject.size_slaid) - 1){
+                valor= valor + 1
+
+                //alert("A " +tam)
+                
+            }else{
+                
+                //alert("B " + valor)
+                valor= valor
+            }
+            return ()=> clearTimeout(id);
+
 
         }, defaultProject.speed);  
         

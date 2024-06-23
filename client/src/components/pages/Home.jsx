@@ -3,7 +3,8 @@ import styles from "./styles-pages/Home.module.css"
 import { Link } from "react-router-dom"
 import { FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa"
 import lamp from "../../images/lampada.png"
-import NavBar from '..//layouts/NavBar'
+import NavBar from '..//layouts/NavBar';
+import Help from '../layouts/Help'
 
 
 export default function Home(){
@@ -48,6 +49,8 @@ export default function Home(){
                     </Link>
                 </div>
             </div>
+
+         <Help />   
                     
         </div>
 
