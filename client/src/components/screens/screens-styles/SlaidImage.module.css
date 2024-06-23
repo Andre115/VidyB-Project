@@ -1,0 +1,40 @@
+.container_imgItem{
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.size{
+    animation: UpSize 1.5s ease-out .5s forwards, DownSize .75s ease 7.9s forwards, desfocar 2s ease .75s forwards;
+}
+
+
+@keyframes UpSize {
+    0%{
+        width: 0px;
+        height: 350px;
+    }
+    100%{
+        width: 400px;
+        height: 450px;
+    }
+    
+}
+
+@keyframes DownSize {
+    0%{
+        width: 400px;
+        height: 450px;
+    }
+    100%{
+        width: 250px;
+        height: 350px;
+    }
+    
+}

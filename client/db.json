@@ -1,0 +1,159 @@
+{
+  "projects": [],
+  "default": {
+    "size_slaid": [
+      {
+        "id": 3,
+        "name": "Três(3)"
+      },
+      {
+        "id": 4,
+        "name": "Quatro(4)"
+      },
+      {
+        "id": 5,
+        "name": "Cinco(5)"
+      },
+      {
+        "id": 10,
+        "name": "Dez(10)"
+      },
+      {
+        "id": 15,
+        "name": "Quinze(15)"
+      },
+      {
+        "id": 20,
+        "name": "Vinte(20)"
+      },
+      {
+        "id": 25,
+        "name": "Vinte e cinco(25)"
+      },
+      {
+        "id": 50,
+        "name": "Cinquenta(50)"
+      },
+      {
+        "id": 100,
+        "name": "Cem(100)"
+      },
+      {
+        "id": 0,
+        "name": "Outro"
+      }
+    ],
+    "screen": [
+      {
+        "id": 1,
+        "name": "Unique"
+      },
+      {
+        "id": 2,
+        "name": "Duble"
+      }
+    ],
+    "position_title": [
+      {
+        "id": "LT",
+        "name": "LEFT(X) - TOP(Y)",
+        "value": [
+          "start",
+          "start"
+        ]
+      },
+      {
+        "id": "CT",
+        "name": "CENTER(X) - TOP(Y)*",
+        "value": [
+          "center",
+          "start"
+        ]
+      },
+      {
+        "id": "RT",
+        "name": "RIGHT(X) - TOP(Y)",
+        "value": [
+          "end",
+          "start"
+        ]
+      },
+      {
+        "id": "LC",
+        "name": "LEFT(X) - CENTER(Y)",
+        "value": [
+          "start",
+          "center"
+        ]
+      },
+      {
+        "id": "CC",
+        "name": "CENTER(X) - CENTER(Y)*",
+        "value": [
+          "center",
+          "center"
+        ]
+      },
+      {
+        "id": "RC",
+        "name": "RIGHT(X) - CENTER(Y)",
+        "value": [
+          "start",
+          "center"
+        ]
+      },
+      {
+        "id": "LB",
+        "name": "LEFT(X) - BOTTON(Y)",
+        "value": [
+          "start",
+          "end"
+        ]
+      },
+      {
+        "id": "CB",
+        "name": "CENTER(X) - BOTTON(Y)*",
+        "value": [
+          "center",
+          "end"
+        ]
+      },
+      {
+        "id": "RB",
+        "name": "RIGHT(X) - BOTTON(Y)",
+        "value": [
+          "end",
+          "end"
+        ]
+      }
+    ],
+    "speed": [
+      {
+        "id": 1,
+        "name": "0.5X"
+      },
+      {
+        "id": 2,
+        "name": "1X"
+      },
+      {
+        "id": 3,
+        "name": "1.5X"
+      },
+      {
+        "id": 4,
+        "name": "2X"
+      }
+    ],
+    "format_image": [
+      {
+        "id": 1,
+        "name": "Row"
+      },
+      {
+        "id": 2,
+        "name": "Column"
+      }
+    ]
+  }
+}

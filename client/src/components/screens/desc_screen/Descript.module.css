@@ -1,0 +1,30 @@
+.containerDescript{
+    position: absolute;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+    background-color: transparent ;
+    display: flex ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 10;
+    
+}
+
+
+.containerDescript p{
+    width: auto;
+    color: #fff;
+    background-color: transparent ;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    
+    
+}

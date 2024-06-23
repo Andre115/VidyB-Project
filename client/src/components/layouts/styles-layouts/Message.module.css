@@ -1,0 +1,46 @@
+.message_container{
+    width: 100%;
+    padding: .8rem 0;
+    margin-bottom: 1rem;
+    font-size: .85rem;
+    border-radius: 1px;
+    position: relative;
+    
+
+
+}
+
+.error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border: #f5c6cb;
+}
+
+
+.sucess{
+    color: #155724;
+    background-color: #d4edda;
+    border: #c3e6cb;
+}
+
+.hidden{
+
+    transition: .5 ease-in-out;
+    animation: goOut 2s 5s forwards;
+    position: relative;
+}
+
+
+
+@keyframes goOut{
+    0%{
+        
+        margin-top: 0;
+        opacity: 1;
+    }
+    100%{
+        margin-top: -4rem;
+        display: none;
+        opacity: 0;
+    }
+}

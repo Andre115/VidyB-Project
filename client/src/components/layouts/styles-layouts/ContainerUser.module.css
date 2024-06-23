@@ -1,0 +1,142 @@
+.section{
+    width: 100%;
+    max-width: 962px;
+    height: calc(100vh - 2rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(213, 24%, 16%, 0.322);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.21);
+}
+
+.section::before{
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    top: -10%;
+    left: -10%;
+    border-radius: 50%;
+    background-color: #66fcf1;
+    animation: loopShadom 12s infinite ease-in-out;
+    animation-delay: 5s;
+    z-index: 0;
+}
+
+.section::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    right: -8%;
+    bottom: -5%;
+    border-radius: 50%;   
+    background-color: #66fcf1;
+    
+    z-index: 0;
+    animation: loopShadom 10s infinite ease-in-out;
+    
+}
+
+
+
+.section_left .decription{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+.section_left .decription h2{
+    margin-bottom: 2rem;
+}
+
+
+
+.section_left{
+
+    height: 100%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section_left a img{
+    width: 160px;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+    
+.section_right{
+
+        height: 100%;
+        width: 50%;
+        position: relative;
+        display: flex;
+        padding: .5rem ;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.1);
+    
+    
+    }
+
+.section .logo_mobile{
+    display: none;
+}
+
+@media (max-width: 734px) {
+    .section_left{
+
+        display: none;
+    }
+
+    .section_right{
+        width: 100%;
+    }
+
+    .section .logo_mobile{
+        display: inline;
+        position: absolute;
+        width: 80%;
+        top: 15%;
+        z-index: -10;
+        opacity: .5;
+    }
+}
+
+
+@media (min-width: 664px) {
+    .section_left a img{
+        width: 210px;
+        
+    }
+
+
+        
+    }
+
+@media (min-width: 744px) {
+    .section_left a img{
+        width: 240px;
+        
+    }
+        
+    }
+
+
+    @keyframes loopShadom{
+        0%{
+            box-shadow: 5px 5px 10px hsl(176, 96%, 69%, .1);
+        }
+        50%{
+            box-shadow: 5px 50px 200px hsl(176, 96%, 69%, 0.8);
+        }
+        100%{
+            box-shadow: 5px 5px 10px hsl(176, 96%, 69%, .1);
+        }
+    }

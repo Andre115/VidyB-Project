@@ -1,0 +1,76 @@
+.containerDelayCount{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111111d0;
+    transition: 1s;
+    animation: turnOff 1s 5.9s forwards;
+
+}
+
+.containerDelayCount div{
+    border: 1px solid #66f1fc;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #66f1fc;
+    box-shadow: 0 0 5px ;
+    transition: 1s;
+    animation: animat 3s forwards infinite alternate-reverse, turnOff 1s 5.9s forwards;
+}
+
+
+@media(max-width: 600px){
+    .containerDelayCount div{
+        color: #66f1fc;
+    }
+
+}
+
+@keyframes animat {
+
+    0%{
+        box-shadow: 2px 0 100px 2px ;
+    }
+    25%{
+        box-shadow: 1px 0 300px 2px ;
+    }
+    50%{
+        box-shadow: 0 2px 500px 2px ;
+    }
+    75%{
+        box-shadow: 1px 0 300px 2px ;
+    }
+    100%{
+        box-shadow: 0 5px 100px 2px ;
+    }
+    
+}
+
+@keyframes turnOff {
+
+    0%{
+        opacity: 1;
+        display: flex;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+    
+}
+
+

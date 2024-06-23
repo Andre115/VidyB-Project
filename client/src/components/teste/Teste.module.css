@@ -1,0 +1,46 @@
+
+.teste_container{
+
+    width: 400px;
+    height:  90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 450px;
+
+
+}
+
+
+
+.teste_container button{
+   border: 1px solid #66f1fc;
+   padding: .5rem 2rem;
+   border-radius: 10px;
+   color: #fff;
+   display: flex;
+    justify-content: center;
+}
+
+
+
+.sel{
+    font-size: 2rem;
+
+}
+
+.img_container{
+    border: 1px solid #66f1fc;
+    width: 200px;
+    height: 150px !important;
+    display: block;
+    margin-top: 1rem;
+
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+}

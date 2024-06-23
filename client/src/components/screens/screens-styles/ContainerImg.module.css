@@ -1,0 +1,13 @@
+.containerIgm{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}

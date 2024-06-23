@@ -1,0 +1,55 @@
+.container_select{
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.container_select select{
+    width: 100%;
+    margin: 1rem 0;
+    height: 2.5rem;
+    padding: .5rem;
+    border: 1px solid #66f1fc;
+    outline: none;
+    background-color: transparent;
+    color: #66f1fc;
+    font-size: 1rem;
+    
+}
+.container_select select option{
+    color: #111;
+
+}
+
+.container_select label{
+    color: #ffffff;
+}
+
+.container_select .descr{
+    text-align: start !important;
+    display: block;
+    margin-bottom: -.25rem;
+    position: relative;
+
+    & span{
+        color:rgb(194, 5, 5);
+        font-size: 1.5rem;
+        display: inline-block;
+        position: relative;
+        bottom: -7.5px; left: 5px;
+        
+    }
+}
+
+
+
+
+.container_select span{
+    color: red;
+    text-align: left;
+    display: block;
+    margin-top: -5px;
+    letter-spacing: 2px;
+}
+
+

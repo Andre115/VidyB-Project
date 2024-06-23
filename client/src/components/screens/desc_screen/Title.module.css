@@ -1,0 +1,25 @@
+.containerTitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent  !important;
+    padding: 1.2rem;
+   
+}
+
+.containerTitle span{
+    color: #fff !important;
+    display: block;
+    font-size: 1rem;
+    padding: .2rem 1rem;
+    width: auto;
+    font-size: 2rem;
+    background-color: transparent !important;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    background-color: #11111167 !important;
+}

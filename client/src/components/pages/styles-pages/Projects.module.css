@@ -1,0 +1,209 @@
+.projects_container{
+    padding: 0 4rem;
+    height: 80vh;
+   
+
+    & .top{
+        margin: 1rem 0;
+        border-bottom: 1.5px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    & h2{
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+
+    & .intems{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .85rem;
+        height: calc(100% - 2.8rem);
+        padding: 1rem 0;
+       
+        
+    }
+    
+    
+    
+}
+
+.projects_container .intem{
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 260px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+.projects_container .intem:hover{
+    transform: scale(.97);
+    box-shadow: 0 5px 5px 5px #fffefe07;
+}
+
+.projects_container .intem .images{
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 45%;
+
+
+}
+
+.projects_container .intem .image_1{
+    transform:  translateX(0deg)  ;
+    z-index: 0;
+}
+.projects_container .intem .image_2{
+    transform: translateX(40px) ;
+}
+.projects_container .intem .image_3{
+    transform: translateX(70px) ;
+}
+.projects_container .intem .image_4{
+    transform: translateX(100px) ;
+
+}
+
+.projects_container .AllDescripts{
+    height: 55%;
+    width: 100%;
+    padding: .5rem .75rem;
+    background-color: #ccc;
+    color: #111;
+
+    & .AllDescripts{
+        
+        font-size: .85rem;
+    }
+   
+}
+
+.projects_container .descripts svg{
+    color: rgb(2, 85, 85);
+    font-size: .85rem;
+    line-height: 12px;
+    margin-right: 5px;
+    position: relative;
+    bottom: -2.5px;
+    flex-direction: column;
+
+
+}
+
+.AllDescripts div h3{
+    font-size: 1.1rem;
+    margin: .25rem 0;
+    background-color: #fff;
+    display: block;
+    padding: .35rem;
+
+}
+
+.AllDescripts div .size,
+.AllDescripts div .descript{
+    display: block;
+    font-size: .85rem;
+}
+
+.AllDescripts div .date{
+    display: block;
+    font-size: .85rem;
+    margin: 3px 0;
+}
+
+.projects_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    top: 0;
+    position: absolute;
+
+}
+
+@media(max-width: 665px){
+    .projects_container{
+        padding: 0 2.5rem 0 1.5rem !important;
+
+    }
+  }
+  
+  
+  @media(max-width: 760px){
+  
+    .projects_container{
+        padding: 0 2rem 0 1rem !important;
+
+        & .intems{
+            display: flex;
+            justify-content: center;
+            overflow-y: scroll;
+            
+        }
+   }
+  
+  }
+  
+  @media(max-width: 465px){
+  
+    .projects_container{
+        padding: 0 1rem 0 0 !important;
+
+        & .intems{
+            display: flex;
+            justify-content: center;
+            overflow-y: scroll;
+            
+        }
+        
+    }
+  }
+
+.intems::-webkit-scrollbar{
+    width: .5rem;
+    cursor: pointer;
+    
+}
+.intems::-webkit-scrollbar-thumb{
+    width: .4rem;
+    background-color: #66f1fc;
+    border-radius: 10px;
+}
+.intems::-webkit-scrollbar-track{
+    width: .5rem;
+    background-color: #fff;
+}
+
+.projects_container .btns{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .35rem;
+    font-size: 0.3rem !important;
+}
+
+.projects_container .btns button{
+    background-image: linear-gradient(to left, #66f1fc, #143a3d, #66f1fc);
+    box-shadow: 0px 0 5px #66fcf265;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 80%;
+    border-radius: 5px;
+
+}
+
+.projects_container .btns svg{
+    font-size: 1rem;
+    margin-right: 2px;
+}

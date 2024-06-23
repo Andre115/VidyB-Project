@@ -1,0 +1,200 @@
+body{
+    position: relative;
+}
+
+.container_FormDefault{
+    width: 100%;
+    height: calc(100% - 11.5rem);
+    padding: 0 1rem;
+    max-width: 785px;
+    text-align: center;
+    transition: .5s;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    
+}
+
+.container_FormDefault .format_dideo{
+    display: block;
+    width: 100%;
+    text-align: start;
+    margin-top: 1rem;
+}
+
+
+.form_project_simples{
+    width: 100%;
+    
+}
+
+.form_project_simples2{
+    width: 100%;
+
+}
+
+.styleSlaid{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+
+
+.btnArea{
+    
+    position: fixed;
+   
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    height: 5rem;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    justify-content: center;
+    z-index: 100;
+    
+
+}
+
+.btnArea div:first-child{
+    margin-right: 6%;
+}
+
+.btnArea div:last-child{
+    margin-left: 6rem;
+  
+}
+
+
+.hidden{
+    position: relative;
+    opacity: 0;
+    transform: translateY(-4rem);
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+    pointer-events: none;
+
+
+}
+
+.form_project{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    gap: 1rem;
+    
+}
+
+
+
+.container_FormDefault h3{
+    font-size: 1.5rem;
+    background-color: #66fcf1;
+    padding: 0.5rem 0;
+    margin: 1rem 0 2rem 0;
+
+}
+
+.visible{
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+}
+
+.btns_confirm_screen{
+    margin: 1rem 0 4.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form_project_simples p{
+    margin: 1rem 0;
+    font-size: .1.1rem;
+}
+.form_project_simples p span{
+    display: inline-block;
+    padding: 3px 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #111;
+    background-color: #66fcf1;
+}
+
+
+@keyframes visi{
+    0%{
+        display: flex;
+    }
+    100%{
+        display: none;
+    }
+}
+
+@media(max-width: 745px){
+
+    .btnArea{
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 550px){
+
+    .btnArea{
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+@media(max-width: 550px){
+    .form_project{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: .5rem;
+        text-align: center;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+    .form_project label,
+    input::placeholder{
+        font-size: .9rem;
+        opacity: .9;
+    }
+
+    .form_project h3{
+        font-size: 1.2rem;
+    
+    }
+
+    .btnArea{
+        justify-content: space-between;
+        
+    }
+    
+}
+
+.container_FormDefault::-webkit-scrollbar{
+    width: .5rem;
+    cursor: pointer;
+    
+}
+.container_FormDefault::-webkit-scrollbar-thumb{
+    width: 1rem;
+    background-color: #66f1fc;
+    border-radius: 10px;
+}
+.container_FormDefault::-webkit-scrollbar-track{
+    width: .5rem;
+    background-color: #fff;
+}

@@ -1,0 +1,175 @@
+.carrosel_itens{
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    width: 100%; 
+    height: 9rem;
+    padding: .2rem;  
+    display: flex;
+    gap: 5px;
+
+    & .container_images_duble{
+        width: 8.2rem;
+        height: 8rem;
+        border: 2px solid rgba(16, 207, 191, 0.712);
+        flex: none;
+        
+        
+        & .cont{           
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+            height: 100%;
+            
+            
+            & .container_item{
+               position: relative;
+                width: 100%;
+                height: 50%;              
+                flex: none;
+                
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    
+                }
+
+            }
+        }
+
+        & .row{
+
+            flex-direction: row;
+             & img{
+                width: 50%;
+                height: 100%;
+             }
+            }
+    
+             & .column{
+                 flex-direction: column;
+    
+                 & img{
+                     width: 100%;
+                     height: 50%;
+                 }         
+            }
+    }
+
+    & .container_image_simples{
+        width: 8.2rem;
+        height: 8rem;
+        border: 2px solid rgba(16, 207, 191, 0.712);
+        flex: none;
+
+        & .cont{   
+            position: relative;            
+            display: flex;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            
+            
+            & .container_item{
+                position: relative;             
+                width: 100%;
+                height: 100%; 
+                
+
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+        }
+    }
+    
+}
+
+
+.container_images_duble:hover .cont,
+.container_image_simples:hover .cont{
+    transform: scale(1.04);
+    font-size: 1rem;
+
+    
+}
+
+
+.carrosel_itens::-webkit-scrollbar{
+    height: .35rem;
+    cursor: pointer;
+    
+}
+
+.carrosel_itens::-webkit-scrollbar-thumb{
+    height: 2rem;
+    background-color: #66f1fc;
+    border-radius: 10px;
+}
+.carrosel_itens::-webkit-scrollbar-track{
+    width: .5rem;
+    background-color: #fff;
+}
+
+
+.carrosel_itens .btns{
+    position: absolute;
+    width: 1.3rem;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & button{
+        background-color: #ffffff46;
+        border: none;
+        width: inherit;
+        height: 1.3rem;
+        border-radius: 50%;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;       
+       
+
+    }
+
+    & button:nth-child(1) svg{
+        opacity: .5;
+        font-size: .8rem;
+        color: rgb(5, 40, 155);
+    }
+    
+    & button:nth-child(2) svg{
+        opacity: .5;
+        font-size: 1rem;
+        color: rgb(206, 6, 6);
+    }
+
+}
+
+.btns button:hover{
+    background-color: #fff;
+    width: inherit;
+    height: 1.3rem;
+    border-radius: 50%;
+}
+
+.btns button:hover svg{
+    display: block;
+    opacity: .1;
+    
+}
+
+
+
+
+

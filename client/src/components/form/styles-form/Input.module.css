@@ -1,0 +1,54 @@
+.container_input{
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.container_input input{
+    width: 100%;
+    margin: .75rem 0;
+    height: 2.5rem;
+    padding: 7.5px 12px 7.5px 35px;
+    border: 1px solid #66f1fc;
+    outline: none;
+    background-color: transparent;
+    color: #66f1fc;
+    font-size: 1rem;
+    
+}
+
+.container_input .labelIcon{
+    position: absolute;
+    left: 7.5px;
+    top: 1.5rem;
+    color: #ffffff;
+}
+
+.container_input .labelIcon svg{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.container_input .descr{
+    text-align: start !important;
+    display: block;
+    margin-bottom: -.25rem;
+
+    & span{
+        color:rgb(194, 5, 5);
+        font-size: 1.5rem;
+        display: inline-block;
+        position: relative;
+        bottom: -8px; left: 5px;
+        
+    }
+}
+
+
+.container_input span{
+    color: red;
+    text-align: left;
+    display: block;
+    margin-top: -5px;
+    letter-spacing: 1.5px;
+}

@@ -1,0 +1,47 @@
+.container_textArea{
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.container_textArea textarea{
+    width: 100%;
+    margin: .75rem 0;
+    height: 5.2rem;
+    padding: 7.5px 12px ;
+    border: 1px solid #66f1fc;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+    overflow-y: hidden;
+    
+}
+
+.container_textArea .labelIcon{
+    position: absolute;
+    left: 7.5px;
+    top: 1.5rem;
+    color: #ffffff;
+}
+
+.container_textArea .labelIcon svg{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.container_textArea .descr{
+    text-align: start !important;
+    display: block;
+    margin-bottom: -.25rem;
+}
+
+
+.container_textArea span{
+    color: red;
+    text-align: left;
+    display: block;
+    margin-top: -5px;
+    letter-spacing: 2px;
+}
